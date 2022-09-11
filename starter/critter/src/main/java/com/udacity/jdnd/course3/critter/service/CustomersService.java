@@ -7,10 +7,12 @@ import com.udacity.jdnd.course3.critter.repository.PetsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Transactional
 @Service
 public class CustomersService {
 
